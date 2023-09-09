@@ -24,7 +24,8 @@ class ViewController: UIViewController {
         
         view.addSubview(webView)
         webView.frame = view.bounds
-        
+
+        // Load web page
         let url = URL(string: "file:///Users/dexter/Desktop/knowledge-base-resources-swift-series-/SampleWebpage/index.html")
         let request = URLRequest(url: url!)
         webView.load(request)
